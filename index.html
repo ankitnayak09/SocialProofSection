@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Social proof section</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'League Spartan', sans-serif;
+    }
+
+    main {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .about {
+      display: flex;
+    }
+
+    .about-left h1 {
+      color: hsl(300, 43%, 22%);
+      font-size: 2rem;
+      width: 40%;
+    }
+
+    .about-left p {
+      color: hsl(303, 10%, 53%);
+      width: 50%;
+      line-height: 130%;
+    }
+
+    .ratings {
+      background-color: hsl(300, 24%, 96%);
+      padding: 10px;
+      margin: 10px;
+      font-weight: 700;
+      color: hsl(300, 43%, 22%);
+      width: 400px;
+    }
+
+    .ratings img {
+      width: 10px;
+    }
+
+    .ratings img:first-of-type {
+      margin-left: 20px;
+    }
+
+    .ratings img:last-of-type {
+      margin-right: 20px;
+    }
+
+    .about-right .ratings:nth-child(1) {
+      position: relative;
+      transform: translateX(-50px);
+    }
+
+    .about-right .ratings:nth-child(2) {
+      position: relative;
+      transform: translateX(-25px);
+    }
+
+    .about-right .ratings:nth-child(3) {
+      position: relative;
+      transform: translateX(0);
+    }
+
+    .testimonials {
+      display: flex;
+    }
+
+    .testimonial__items {
+      background-color: hsl(300, 43%, 22%);
+      margin: 10px;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .testimonial__items .profile_header {
+      display: flex;
+      align-items: center;
+      color: hsl(0, 0%, 100%);
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .testimonial__items .profile_header p>span {
+      color: hsl(333, 80%, 67%);
+      font-weight: 500;
+    }
+
+    .testimonial__items .profile_header+p {
+      color: hsl(0, 0%, 100%);
+      font-weight: 400;
+    }
+
+    .testimonial__items .profile_header img {
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+    }
+
+    .testimonial__items:nth-child(2) {
+      position: relative;
+      transform: translateY(20px);
+    }
+
+    .testimonial__items:nth-child(3) {
+      position: relative;
+      transform: translateY(40px);
+    }
+
+    @media screen and (max-width: 375px) {
+      body {
+        flex-direction: column;
+      }
+      main {
+        width: 100%;
+      }
+      .about {
+        flex-direction: column;
+        width: 100%;
+      }
+      .testimonials {
+      flex-direction: column;
+    }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <section class="about">
+      <div class="about-left">
+        <h1>10,000+ of our users love our products.</h1>
+        <p>We only provide great products combined with excellent customer service.
+          See what our satisfied customers are saying about our services.</p>
+      </div>
+      <div class="about-right">
+        <div class="ratings">
+          <img src="./images/icon-star.svg" alt="">
+          <img src="./images/icon-star.svg" alt="">
+          <img src="./images/icon-star.svg" alt="">
+          <img src="./images/icon-star.svg" alt="">
+          <img src="./images/icon-star.svg" alt="">
+          Rated 5 Stars in Reviews
+        </div>
+        <div class="ratings">
+          <img src="./images/icon-star.svg" alt="">
+          <img src="./images/icon-star.svg" alt="">
+          <img src="./images/icon-star.svg" alt="">
+          <img src="./images/icon-star.svg" alt="">
+          <img src="./images/icon-star.svg" alt="">
+          Rated 5 Stars in Report Guru
+        </div>
+        <div class="ratings">
+          <img src="./images/icon-star.svg" alt="">
+          <img src="./images/icon-star.svg" alt="">
+          <img src="./images/icon-star.svg" alt="">
+          <img src="./images/icon-star.svg" alt="">
+          <img src="./images/icon-star.svg" alt="">
+          Rated 5 Stars in BestTech
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <div class="testimonial__items">
+        <div class="profile_header">
+          <img src="./images/image-colton.jpg" alt="">
+          <p>Colton Smith<br>
+            <span>Verified Buyer</span>
+          </p>
+        </div>
+        <p>"We needed the same printed design as the one we had ordered a week prior.
+          Not only did they find the original order, but we also received it in time.
+          Excellent!"</p>
+      </div>
+
+      <div class="testimonial__items">
+        <div class="profile_header">
+          <img src="./images/image-irene.jpg" alt="">
+          <p>Irene Roberts<br>
+            <span>Verified Buyer</span>
+          </p>
+        </div>
+        <p>"Customer service is always excellent and very quick turn around. Completely
+          delighted with the simplicity of the purchase and the speed of delivery."</p>
+      </div>
+
+      <div class="testimonial__items">
+        <div class="profile_header">
+          <img src="./images/image-anne.jpg" alt="">
+          <p>Anne Wallace
+            <br> <span>Verified Buyer</span>
+          </p>
+        </div>
+        <p>"Put an order with this company and can only praise them for the very high
+          standard. Will definitely use them again and recommend them to everyone!"</p>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+
+</html>
